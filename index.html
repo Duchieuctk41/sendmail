@@ -9,7 +9,7 @@
 	<body style="box-sizing: border-box;font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;,
 		&quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;,
 		sans-serif;width: 100%;height: 100%;margin: 0;overflow-x: hidden;background-color: #ECECEC;">
-		<div class="header_block" style="box-sizing: border-box;width: 100%;height: 340px;background-image: url(https://top247.vn/wp-content/uploads/2020/04/top-10-shop-ban-quan-ao-nam-dep-gia-re-tai-tphcm-2.jpg);background-position: center;background-size: cover;background-repeat: no-repeat;">
+		<div class="header_block" style="box-sizing: border-box;width: 100%;height: 340px;background-image: url({{params.AVATAR_BUSINESS}});background-position: center;background-size: cover;background-repeat: no-repeat;">
 		</div>
 		<div class="body" style="box-sizing: border-box;position: absolute;left: 50%;transform: translateX(-50%);width: 580px;background: #FFFFFF;box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);border-radius: 12px 12px 0px 0px;top: 26.8%;">
 			<div class="container" style="box-sizing: border-box;">
@@ -72,24 +72,24 @@
 								</tr>
 							{% endfor %}
 							<tr style="background-color: #ECECEC;box-sizing: border-box;">
-								<td style="text-align: left;border-bottom: 1px solid #D7D7D7;border-right: 0;box-sizing: border-box;border-left: 1px solid #D7D7D7;padding: 12px;font-size: 12px;vertical-align: top;" colspan="2">Tạm tính</td>
-								<td style="text-align: right;border-right: 1px solid #D7D7D7;border-bottom: 1px solid #D7D7D7;border-left: 1px solid #D7D7D7;box-sizing: border-box;padding: 12px;font-size: 12px;vertical-align: top;" colspan="2"><b style="box-sizing: border-box;">{{params.ORDERED_GRAND_TOTAL}}</b></td>
+								<td style="text-align: left;border-bottom: 0;border-right: 0;box-sizing: border-box;border-left: 1px solid #D7D7D7;padding: 12px;font-size: 12px;vertical-align: top;" colspan="2">Tạm tính</td>
+								<td style="text-align: right;border-right: 0;border-bottom: 0;border-left: 0;box-sizing: border-box;padding: 12px;font-size: 12px;vertical-align: top;" colspan="2"><b style="box-sizing: border-box;">{{params.ORDERED_GRAND_TOTAL}}</b></td>
 							</tr>
 							<tr style="background-color: #ECECEC;box-sizing: border-box;">
-								<td style="padding-top: 0px;text-align: left;border-bottom: 1px solid #D7D7D7;border-right: 0;box-sizing: border-box;border-left: 1px solid #D7D7D7;padding: 12px;font-size: 12px;vertical-align: top;" colspan="2">Phí ship</td>
-								<td style="padding-top: 0px;text-align: right;border-right: 1px solid #D7D7D7;border-bottom: 1px solid #D7D7D7;border-left: 1px solid #D7D7D7;box-sizing: border-box;padding: 12px;font-size: 12px;vertical-align: top;" colspan="2">{{params.DELIVERY_FEE}}</td>
+								<td style="padding: 12px;padding-top: 0px;text-align: left;border-bottom: 0;border-right: 0;box-sizing: border-box;border-left: 1px solid #D7D7D7;font-size: 12px;vertical-align: top;" colspan="2">Phí ship</td>
+								<td style="padding: 12px;padding-top: 0px;text-align: right;border-right: 1px solid #D7D7D7;border-bottom: 0;border-left: 0;box-sizing: border-box;font-size: 12px;vertical-align: top;" colspan="2">{{params.DELIVERY_FEE}}</td>
 							</tr>
 							<tr style="background-color: #ECECEC;box-sizing: border-box;">
-								<td style="padding-top: 0px;text-align: left;border-bottom: 1px solid #D7D7D7;border-right: 0;box-sizing: border-box;border-left: 1px solid #D7D7D7;padding: 12px;font-size: 12px;vertical-align: top;" colspan="2">Khuyến mãi</td>
-								<td style="padding-top: 0px;text-align: right;border-right: 1px solid #D7D7D7;border-bottom: 1px solid #D7D7D7;border-left: 1px solid #D7D7D7;box-sizing: border-box;padding: 12px;font-size: 12px;vertical-align: top;" colspan="2">{{params.PROMOTION_DISCOUNT}}</td>
+								<td style="padding: 12px;padding-top: 0px;text-align: left;border-bottom: 0;border-right: 0;box-sizing: border-box;border-left: 1px solid #D7D7D7;font-size: 12px;vertical-align: top;" colspan="2">Khuyến mãi</td>
+								<td style="padding: 12px;padding-top: 0px;text-align: right;border-right: 1px solid #D7D7D7;border-bottom: 0;border-left: 0;box-sizing: border-box;font-size: 12px;vertical-align: top;" colspan="2">{{params.PROMOTION_DISCOUNT}}</td>
 							</tr>
 							<tr style="background-color: #ECECEC;box-sizing: border-box;">
-								<td style="padding-top: 0px;text-align: left;border-bottom: 1px solid #D7D7D7;border-right: 0;box-sizing: border-box;border-left: 1px solid #D7D7D7;padding: 12px;font-size: 12px;vertical-align: top;" colspan="2">Chiết khấu</td>
-								<td style="padding-top: 0px;text-align: right;border-right: 1px solid #D7D7D7;border-bottom: 1px solid #D7D7D7;border-left: 1px solid #D7D7D7;box-sizing: border-box;padding: 12px;font-size: 12px;vertical-align: top;" colspan="2">{{params.DISCOUNT}}</td>
+								<td style="padding: 12px;padding-top: 0px;text-align: left;border-bottom: 0;border-right: 0;box-sizing: border-box;border-left: 1px solid #D7D7D7;font-size: 12px;vertical-align: top;" colspan="2">Chiết khấu</td>
+								<td style="padding: 12px;padding-top: 0px;text-align: right;border-right: 1px solid #D7D7D7;border-bottom: 0;border-left: 0;box-sizing: border-box;font-size: 12px;vertical-align: top;" colspan="2">{{params.DISCOUNT}}</td>
 							</tr>
 							<tr style="background-color: #ECECEC;box-sizing: border-box;">
-								<td style="border-bottom-left-radius: 8px;font-size: 16px;padding-top: 0px;text-align: left;border-right: 0;box-sizing: border-box;border-bottom: 1px solid #D7D7D7;border-left: 1px solid #D7D7D7;padding: 12px;vertical-align: top;" colspan="2"><b style="box-sizing: border-box;">Tổng cộng</b></td>
-								<td style="border-bottom-right-radius: 8px;font-size: 16px;padding-top: 0px;text-align: right;border-right: 1px solid #D7D7D7;border-left: 1px solid #D7D7D7;box-sizing: border-box;border-bottom: 1px solid #D7D7D7;padding: 12px;vertical-align: top;" colspan="2"><b style="box-sizing: border-box;">{{params.GRAND_TOTAL}}</b></td>
+								<td style="padding: 12px;border-bottom-left-radius: 8px;font-size: 16px;padding-top: 0px;text-align: left;border-right: 0;box-sizing: border-box;border-bottom: 1px solid #D7D7D7;border-left: 1px solid #D7D7D7;vertical-align: top;" colspan="2"><b style="box-sizing: border-box;">Tổng cộng</b></td>
+								<td style="padding: 12px;border-bottom-right-radius: 8px;font-size: 16px;padding-top: 0px;text-align: right;border-right: 1px solid #D7D7D7;border-left: 0;box-sizing: border-box;border-bottom: 1px solid #D7D7D7;vertical-align: top;" colspan="2"><b style="box-sizing: border-box;">{{params.GRAND_TOTAL}}</b></td>
 							</tr>
 						</table>
 					</div>
