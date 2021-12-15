@@ -20,7 +20,7 @@
 						</div>
 						<div class="infobox__content" style="box-sizing: border-box;width: 70%;font-size: 10px;padding-right: 45px;font-weight: 500;">
 							<p style="box-sizing: border-box;">{{params.NAME_BUSINESS}}</p>
-							<p style="box-sizing: border-box;"><a href="#" style="box-sizing: border-box;text-decoration: none;color: inherit;cursor: pointer;">{{params.DOMAIN_BUSINESS}}</a></p>
+							<p style="box-sizing: border-box;"><a href="{{params.DOMAIN_BUSINESS}}" style="box-sizing: border-box;text-decoration: none;color: inherit;cursor: pointer;">{{params.DOMAIN_BUSINESS}}</a></p>
 							<p style="box-sizing: border-box;">{{params.PHONE_BUSINESS}} - {{params.ADDRESS_BUSINESS}}</p>
 						</div>
 					</div>
@@ -32,14 +32,14 @@
 				<div class="body__content" style="box-sizing: border-box;padding: 0px 26px 0px 26px;font-size: 12px;">
 					<div class="body__content_header" style="box-sizing: border-box;">
 						<h3 style="box-sizing: border-box;font-size: 15px;">Xin chào {{params.NAME_CUSTOMER}}</h3>
-						<p style="box-sizing: border-box;">Đơn hàng <span style="color: #16884a;box-sizing: border-box;"><b style="box-sizing: border-box;">ABC {{params.TOTAL_ITEMS}} sản phẩm - trị giá {{params.GRAND_TOTAL}} VND)</b></span> của bạn {{params.STATE}}!</p>
-						<p style="box-sizing: border-box;">Cảm ơn đã đặt hàng tại shop Shop ABC. Bạn sẽ nhận được thông báo tiếp theo ngay sau khi shop xác nhận đơn hàng.</p>
+						<p style="box-sizing: border-box;">Đơn hàng <span style="color: #16884a;box-sizing: border-box;"><b style="box-sizing: border-box;">({{params.TOTAL_ITEMS}} sản phẩm - trị giá {{params.GRAND_TOTAL}} VND)</b></span> của bạn {{params.STATE}}!</p>
+						<p style="box-sizing: border-box;">Cảm ơn đã đặt hàng tại shop Shop {{params.NAME_BUSINESS}}. Bạn sẽ nhận được thông báo tiếp theo ngay sau khi shop xác nhận đơn hàng.</p>
 						<p style="box-sizing: border-box;"><b style="box-sizing: border-box;"><i style="box-sizing: border-box;">Đơn hàng thanh toán khi giao</i></b>, hãy chuẩn bị tiền mặt lúc nhận hàng nhé!</p>
-						<p style="box-sizing: border-box;"><a href="{{params.DOMAIN}}/o/order/{{params.ORDER_NUMBER}}" style="box-sizing: border-box;text-decoration: none;color: inherit;cursor: pointer;">Click để xem thông tin chi tiết của đơn hàng.</a></p>
-						<p style="box-sizing: border-box;">Nếu có bất cứ thắc mắc gì về đơn hàng, giao hàng, thanh toán, chất lượng sản phẩm. xin liên hệ với shop {{params.NAME_BUSINESS}} - Địa chỉ {{params.ADDRESS_BUSINESS}} | Hotline {{params.PHONE_NUMBER}} | Website {{params.DOMAIN}}</p>
+						<p style="box-sizing: border-box;"><a href="{{params.DOMAIN_BUSINESS}}/o/{{params.ORDER_NUMBER}}" style="box-sizing: border-box;text-decoration: none;color: inherit;cursor: pointer;">Click để xem thông tin chi tiết của đơn hàng.</a></p>
+						<p style="box-sizing: border-box;">Nếu có bất cứ thắc mắc gì về đơn hàng, giao hàng, thanh toán, chất lượng sản phẩm. xin liên hệ với shop {{params.NAME_BUSINESS}} - Địa chỉ {{params.ADDRESS_BUSINESS}} | Hotline {{params.PHONE_BUSINESS}} | Website {{params.DOMAIN_BUSINESS}}</p>
 					</div>
 					<div class="detailOrder" style="box-sizing: border-box;margin: auto;width: 165px;">
-						<a href="{{params.DOMAIN}}/o/order/{{params.ORDER_NUMBER}}" style="box-sizing: border-box;text-decoration: none;color: inherit;cursor: pointer;"><button class="detailorder" style="box-sizing: border-box;display: block;margin: auto;margin-top: 25%;margin-bottom: 9%;width: 100%;padding: 9.5px 24px 9.5px 24px;background-color: #16884A;box-shadow: 0px 8px 16px rgba(0, 171, 85, 0.08);border-radius: 8px;font-size: 14px;color: #fff;font-weight: 500;border: 0;">Chi tiết đơn hàng</button></a>
+						<a href="{{params.DOMAIN_BUSINESS}}/o/{{params.ORDER_NUMBER}}" style="box-sizing: border-box;text-decoration: none;color: inherit;cursor: pointer;"><button class="detailorder" style="box-sizing: border-box;display: block;margin: auto;margin-top: 25%;margin-bottom: 9%;width: 100%;padding: 9.5px 24px 9.5px 24px;background-color: #16884A;box-shadow: 0px 8px 16px rgba(0, 171, 85, 0.08);border-radius: 8px;font-size: 14px;color: #fff;font-weight: 500;border: 0;">Chi tiết đơn hàng</button></a>
 						<!-- <div class="code"><img src="https://indochinapost.vn/wp-content/uploads/2018/10/ma-code.gif" alt=""></div> -->
 						<span style="box-sizing: border-box;font-size: 10px;display: block;margin: 10% auto 30%;text-align: center;">Mã đơn hàng: {{params.ORDER_NUMBER}}</span>
 					</div>
