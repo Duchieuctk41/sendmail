@@ -1,4 +1,3 @@
-<<<<<<< Updated upstream
 <!DOCTYPE html>
 <html lang="en" style="box-sizing: border-box;">
 	<head style="box-sizing: border-box;">
@@ -7,26 +6,26 @@
 		<title style="box-sizing: border-box;">Gmail Template</title>
 		
 	</head>
-	<body style="box-sizing: border-box;font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;,
-		&quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;,
+	<body style="box-sizing: border-box;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
 		sans-serif;width: 100%;height: 100%;margin: 0;overflow-x: hidden;background-color: #ECECEC;">
 		<div class="header_block" style="box-sizing: border-box;width: 100%;height: 340px;background-image: url({{params.BACKGROUND}});background-position: center;background-size: cover;background-repeat: no-repeat;">
 		</div>
-		<div class="body" style="box-sizing: border-box;position: absolute;left: 50%;transform: translateX(-50%);width: 580px;background: #FFFFFF;box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);border-radius: 12px 12px 0px 0px;top: 26.8%;">
+		<div class="body" style="box-sizing: border-box;position: absolute;left: 50%;transform: translateX(-50%);width: 580px;background: #FFFFFF;box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);-moz-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25); -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);border-radius: 12px 12px 0px 0px;top: 26.8%;">
 			<div class="container" style="box-sizing: border-box;">
 				<div class="body__title" style="box-sizing: border-box;display: flex;background-color: #F6F6F6;border-top-left-radius: 8px;border-top-right-radius: 8px;">
-					<div class="infobox" style="box-sizing: border-box;flex: 70%;display: flex;padding: 7px;">
+					<div class="infobox" style="box-sizing: border-box;flex: 70%;display: flex;padding: 9px;padding-top:10px">
 						<div class="image" style="box-sizing: border-box;width: 30%;padding-left: 36px;padding-top: 10px;">
 							<img src="{{params.AVATAR_BUSINESS}}" style="box-sizing: border-box;display: block;height: 60px;">
 						</div>
 						<div class="infobox__content" style="box-sizing: border-box;width: 70%;font-size: 10px;padding-right: 45px;font-weight: 500;">
 							<p style="box-sizing: border-box;">{{params.NAME_BUSINESS}}</p>
-							<p style="box-sizing: border-box;"><a href="{{params.DOMAIN_BUSINESS}}" style="box-sizing: border-box;text-decoration: none;color: inherit;cursor: pointer;">{{params.DOMAIN_BUSINESS}}</a></p>
+							<p style="box-sizing: border-box;"><a href="{{params.DOMAIN_BUSINESS}}" style="box-sizing: border-box;text-decoration: none;color: inherit;cursor: pointer;color:inherit;">{{params.DOMAIN_BUSINESS}}</a></p>
 							<p style="box-sizing: border-box;">{{params.PHONE_BUSINESS}} - {{params.ADDRESS_BUSINESS}}</p>
 						</div>
 					</div>
-					<div class="logo" style="box-sizing: border-box;width: 30%;padding-left: 19px;padding: 9px;">
-						<img src="{{params.BACKGROUND}}" alt="" style="box-sizing: border-box;height: 32px;display: block;margin-top: 24px;">
+					<div class="logo" style="box-sizing: border-box;width: 30%;padding-left: 19px;padding-right: 7px;">
+						<img src="https://sobanhang.com/wp-content/uploads/2021/08/cropped-cropped-logo-website.png" alt="" style="box-sizing: border-box;height: 32px;display: block;margin-top: 24px;">
 					</div>
 				</div>
 				<h1 style="box-sizing: border-box;font-size: 18px;margin: 0px auto 0px;padding-top: 40px;padding-bottom: 50px;text-align: center;">Đơn hàng <span style="color: #16884a;box-sizing: border-box;">#{{params.ORDER_NUMBER}}</span> {{params.STATE}}!</h1>
@@ -36,11 +35,11 @@
 						<p style="box-sizing: border-box;padding-bottom:8px;">Đơn hàng <span style="color: #16884a;box-sizing: border-box;"><b style="box-sizing: border-box;">({{params.TOTAL_ITEMS}} sản phẩm - trị giá {{params.GRAND_TOTAL}} VND)</b></span> của bạn {{params.STATE}}!</p>
 						<p style="box-sizing: border-box;padding-bottom:8px;">Cảm ơn đã đặt hàng tại shop Shop {{params.NAME_BUSINESS}}. Bạn sẽ nhận được thông báo tiếp theo ngay sau khi shop xác nhận đơn hàng.</p>
 						<p style="box-sizing: border-box;padding-bottom:8px;"><b style="box-sizing: border-box;"><i style="box-sizing: border-box;">Đơn hàng thanh toán khi giao</i></b>, hãy chuẩn bị tiền mặt lúc nhận hàng nhé!</p>
-						<p style="box-sizing: border-box;padding-bottom:8px;"><a href="{{params.DOMAIN_BUSINESS}}/o/{{params.ORDER_NUMBER}}" style="box-sizing: border-box;text-decoration: none;color: inherit;cursor: pointer;">Click để xem thông tin chi tiết của đơn hàng.</a></p>
+						<p style="box-sizing: border-box;padding-bottom:8px;"><a href="{{params.DOMAIN_BUSINESS}}/o/{{params.ORDER_NUMBER}}" style="box-sizing: border-box;text-decoration: none;color: inherit;cursor: pointer;color:inherit;">Click để xem thông tin chi tiết của đơn hàng.</a></p>
 						<p style="box-sizing: border-box;padding-bottom:8px;">Nếu có bất cứ thắc mắc gì về đơn hàng, giao hàng, thanh toán, chất lượng sản phẩm. xin liên hệ với shop {{params.NAME_BUSINESS}} - Địa chỉ {{params.ADDRESS_BUSINESS}} | Hotline {{params.PHONE_BUSINESS}} | Website {{params.DOMAIN_BUSINESS}}</p>
 					</div>
 					<div class="detailOrder" style="box-sizing: border-box;margin: auto;width: 165px;">
-						<a href="{{params.DOMAIN_BUSINESS}}/o/{{params.ORDER_NUMBER}}" style="box-sizing: border-box;text-decoration: none;color: inherit;cursor: pointer;"><button class="detailorder" style="box-sizing: border-box;display: block;margin: auto;margin-top: 25%;margin-bottom: 9%;width: 100%;padding: 9.5px 24px 9.5px 24px;background-color: #16884A;box-shadow: 0px 8px 16px rgba(0, 171, 85, 0.08);border-radius: 8px;font-size: 14px;color: #fff;font-weight: 500;border: 0;">Chi tiết đơn hàng</button></a>
+						<a href="{{params.DOMAIN_BUSINESS}}/o/{{params.ORDER_NUMBER}}" style="box-sizing: border-box;text-decoration: none;color: inherit;cursor: pointer;color:inherit;"><button class="detailorder" style="box-sizing: border-box;display: block;margin: auto;margin-top: 25%;margin-bottom: 9%;width: 100%;padding: 9.5px 24px 9.5px 24px;background-color: #16884A;box-shadow: 0px 8px 16px rgba(0, 171, 85, 0.08);border-radius: 8px;font-size: 14px;color: #fff;font-weight: 500;border: 0;">Chi tiết đơn hàng</button></a>
 						<!-- <div class="code"><img src="https://indochinapost.vn/wp-content/uploads/2018/10/ma-code.gif" alt=""></div> -->
 						<span style="box-sizing: border-box;font-size: 10px;display: block;margin: 10% auto 30%;text-align: center;">Mã đơn hàng: {{params.ORDER_NUMBER}}</span>
 					</div>
@@ -110,117 +109,3 @@
 			</div>
 		</div>
 	</body>
-	=======
-	<!DOCTYPE html>
-	<html lang="en" style="box-sizing: border-box;">
-		<head style="box-sizing: border-box;">
-			<meta charset="UTF-8" style="box-sizing: border-box;">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0" style="box-sizing: border-box;">
-			<title style="box-sizing: border-box;">Gmail Template</title>
-			
-		</head>
-		<body style="box-sizing: border-box;font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, &quot;Roboto&quot;, &quot;Oxygen&quot;,
-			&quot;Ubuntu&quot;, &quot;Cantarell&quot;, &quot;Fira Sans&quot;, &quot;Droid Sans&quot;, &quot;Helvetica Neue&quot;,
-			sans-serif;width: 100%;height: 100%;margin: 0;overflow-x: hidden;background-color: #ECECEC;">
-			<div class="header_block" style="box-sizing: border-box;width: 100%;height: 340px;background-image: url({{params.BACKGROUND}});background-position: center;background-size: cover;background-repeat: no-repeat;">
-			</div>
-			<div class="body" style="box-sizing: border-box;position: absolute;left: 50%;transform: translateX(-50%);width: 580px;background: #FFFFFF;box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);border-radius: 12px 12px 0px 0px;top: 26.8%;">
-				<div class="container" style="box-sizing: border-box;">
-					<div class="body__title" style="box-sizing: border-box;display: flex;background-color: #F6F6F6;border-top-left-radius: 8px;border-top-right-radius: 8px;">
-						<div class="infobox" style="box-sizing: border-box;flex: 70%;display: flex;padding: 7px;padding-top:9px">
-							<div class="image" style="box-sizing: border-box;width: 30%;padding-left: 36px;padding-top: 10px;">
-								<img src="{{params.AVATAR_BUSINES}}" style="box-sizing: border-box;display: block;height: 60px;">
-							</div>
-							<div class="infobox__content" style="box-sizing: border-box;width: 70%;font-size: 10px;padding-right: 45px;font-weight: 500;">
-								<p style="box-sizing: border-box;">{{params.NAME_BUSINESS}}</p>
-								<p style="box-sizing: border-box;"><a href="{{params.DOMAIN_BUSINESS}}" style="box-sizing: border-box;text-decoration: none;color: inherit;cursor: pointer;color:inherit;">{{params.DOMAIN_BUSINESS}}</a></p>
-								<p style="box-sizing: border-box;">{{params.PHONE_BUSINESS}} - {{params.ADDRESS_BUSINESS}}</p>
-							</div>
-						</div>
-						<div class="logo" style="box-sizing: border-box;width: 30%;padding-left: 19px;padding-right: 9px;">
-							<img src="https://sobanhang.com/wp-content/uploads/2021/08/cropped-cropped-logo-website.png" alt="" style="box-sizing: border-box;height: 32px;display: block;margin-top: 24px;">
-						</div>
-					</div>
-					<h1 style="box-sizing: border-box;font-size: 18px;margin: 0px auto 0px;padding-top: 40px;padding-bottom: 50px;text-align: center;">Đơn hàng <span style="color: #16884a;box-sizing: border-box;">#{{params.ORDER_NUMBER}}</span> {{params.STATE}}!</h1>
-					<div class="body__content" style="box-sizing: border-box;padding: 0px 26px 0px 26px;font-size: 12px;">
-						<div class="body__content_header" style="box-sizing: border-box;">
-							<h3 style="box-sizing: border-box;font-size: 15px;padding-bottom:8px">Xin chào {{params.NAME_CUSTOMER}}</h3>
-							<p style="box-sizing: border-box;padding-bottom:8px;">Đơn hàng <span style="color: #16884a;box-sizing: border-box;"><b style="box-sizing: border-box;">({{params.TOTAL_ITEMS}} sản phẩm - trị giá {{params.GRAND_TOTAL}} VND)</b></span> của bạn {{params.STATE}}!</p>
-							<p style="box-sizing: border-box;padding-bottom:8px;">Cảm ơn đã đặt hàng tại shop Shop {{params.NAME_BUSINESS}}. Bạn sẽ nhận được thông báo tiếp theo ngay sau khi shop xác nhận đơn hàng.</p>
-							<p style="box-sizing: border-box;padding-bottom:8px;"><b style="box-sizing: border-box;"><i style="box-sizing: border-box;">Đơn hàng thanh toán khi giao</i></b>, hãy chuẩn bị tiền mặt lúc nhận hàng nhé!</p>
-							<p style="box-sizing: border-box;padding-bottom:8px;"><a href="{{params.DOMAIN_BUSINESS}}/o/{{params.ORDER_NUMBER}}" style="box-sizing: border-box;text-decoration: none;color: inherit;cursor: pointer;color:inherit;">Click để xem thông tin chi tiết của đơn hàng.</a></p>
-							<p style="box-sizing: border-box;padding-bottom:8px;">Nếu có bất cứ thắc mắc gì về đơn hàng, giao hàng, thanh toán, chất lượng sản phẩm. xin liên hệ với shop {{params.NAME_BUSINESS}} - Địa chỉ {{params.ADDRESS_BUSINESS}} | Hotline {{params.PHONE_BUSINESS}} | Website {{params.DOMAIN_BUSINESS}}</p>
-						</div>
-						<div class="detailOrder" style="box-sizing: border-box;margin: auto;width: 165px;">
-							<a href="{{params.DOMAIN_BUSINESS}}/o/{{params.ORDER_NUMBER}}" style="box-sizing: border-box;text-decoration: none;color: inherit;cursor: pointer;color:inherit;"><button class="detailorder" style="box-sizing: border-box;display: block;margin: auto;margin-top: 25%;margin-bottom: 9%;width: 100%;padding: 9.5px 24px 9.5px 24px;background-color: #16884A;box-shadow: 0px 8px 16px rgba(0, 171, 85, 0.08);border-radius: 8px;font-size: 14px;color: #fff;font-weight: 500;border: 0;">Chi tiết đơn hàng</button></a>
-							<!-- <div class="code"><img src="https://indochinapost.vn/wp-content/uploads/2018/10/ma-code.gif" alt=""></div> -->
-							<span style="box-sizing: border-box;font-size: 10px;display: block;margin: 10% auto 30%;text-align: center;">Mã đơn hàng: {{params.ORDER_NUMBER}}</span>
-						</div>
-						<h3 style="box-sizing: border-box;font-size: 15px;">Thông tin đơn hàng</h3>
-						<div class="orderInfo" style="box-sizing: border-box;">
-							<table id="myTable" style="box-sizing: border-box;width: 100%;font-size: 18px;border-spacing: 0px;">
-								<tr class="header" style="box-sizing: border-box;background-color: #16884A;color: #fff;">
-									<th style="vertical-align: inherit;width: 68%;border-top-left-radius: 8px;text-align: left;box-sizing: border-box;padding: 12px;font-size: 12px;">Sản phẩm</th>
-									<th style="width: 20%;box-sizing: border-box;text-align: center;padding: 12px;font-size: 12px;vertical-align: top;">Giá bán</th>
-									<th style="width: 6%;box-sizing: border-box;text-align: center;padding: 12px;font-size: 12px;vertical-align: top;">Số lượng</th>
-									<th style="width: 6%;border-top-right-radius: 8px;box-sizing: border-box;text-align: center;padding: 12px;font-size: 12px;vertical-align: top;">Đơn vị</th>
-								</tr>
-								
-								{% for item in params.ORDER_ITEMS %}
-									<tr class="product" style="box-sizing: border-box;">
-										<td class="product_image" style="box-sizing: border-box;border-bottom: 1px solid #D7D7D7;border-left: 1px solid #D7D7D7;display: flex;text-align: center;padding: 12px;font-size: 12px;vertical-align: top;">
-											<img src="{{item.product_images}}" alt="" style="box-sizing: border-box;max-width: 42px;max-height: 42px;align-self: center;">
-											<div class="content" style="box-sizing: border-box;font-size: 10px;padding-left: 12px;text-align: left;">
-												<h3 style="box-sizing: border-box;font-size: 12px;margin-top: 0px;margin-bottom: 4px;">{{item.product_name}}</h3>
-												<div class="sku" style="box-sizing: border-box;background-color: #F1F1F1;width: fit-content;border-radius: 6px;padding: 4px 8px 4px 8px;color: #7F7F7F;">{{item.sku_name}}</div> <!-- cho nay can sua -->
-												<span style="box-sizing: border-box;color: #7F7F7F;">Loại cay vừa</span>
-											</div>
-										</td>
-										<td style="box-sizing: border-box;border-bottom: 1px solid #D7D7D7;border-left: 1px solid #D7D7D7;text-align: center;padding: 12px;font-size: 12px;vertical-align: top;">{%if item.product_selling_price == 0%}
-											{{item.product_normal_price}}
-											{%else%} {{item.product_selling_price}}
-										{% endif %}</td>
-										<td style="box-sizing: border-box;border-bottom: 1px solid #D7D7D7;border-left: 1px solid #D7D7D7;text-align: center;padding: 12px;font-size: 12px;vertical-align: top;">{{item.quantity}}</td>
-										<td style="border-right: 1px solid #D7D7D7;box-sizing: border-box;border-bottom: 1px solid #D7D7D7;border-left: 1px solid #D7D7D7;text-align: center;padding: 12px;font-size: 12px;vertical-align: top;">{{item.uom}}</td>
-									</tr>
-								{% endfor %}
-								<tr style="background-color: #ECECEC;box-sizing: border-box;">
-									<td style="text-align: left;border-bottom: 0;border-right: 0;box-sizing: border-box;border-left: 1px solid #D7D7D7;padding: 12px;font-size: 12px;vertical-align: top;" colspan="2">Tạm tính</td>
-									<td style="text-align: right;border-right: 0;border-bottom: 0;border-left: 0;box-sizing: border-box;padding: 12px;font-size: 12px;vertical-align: top;" colspan="2"><b style="box-sizing: border-box;">{{params.ORDERED_GRAND_TOTAL}}</b></td>
-								</tr>
-								<tr style="background-color: #ECECEC;box-sizing: border-box;">
-									<td style="padding: 12px;padding-top: 0px;text-align: left;border-bottom: 0;border-right: 0;box-sizing: border-box;border-left: 1px solid #D7D7D7;font-size: 12px;vertical-align: top;" colspan="2">Phí ship</td>
-									<td style="padding: 12px;padding-top: 0px;text-align: right;border-right: 1px solid #D7D7D7;border-bottom: 0;border-left: 0;box-sizing: border-box;font-size: 12px;vertical-align: top;" colspan="2">{{params.DELIVERY_FEE}}</td>
-								</tr>
-								<tr style="background-color: #ECECEC;box-sizing: border-box;">
-									<td style="padding: 12px;padding-top: 0px;text-align: left;border-bottom: 0;border-right: 0;box-sizing: border-box;border-left: 1px solid #D7D7D7;font-size: 12px;vertical-align: top;" colspan="2">Khuyến mãi</td>
-									<td style="padding: 12px;padding-top: 0px;text-align: right;border-right: 1px solid #D7D7D7;border-bottom: 0;border-left: 0;box-sizing: border-box;font-size: 12px;vertical-align: top;" colspan="2">{{params.PROMOTION_DISCOUNT}}</td>
-								</tr>
-								<tr style="background-color: #ECECEC;box-sizing: border-box;">
-									<td style="padding: 12px;padding-top: 0px;text-align: left;border-bottom: 0;border-right: 0;box-sizing: border-box;border-left: 1px solid #D7D7D7;font-size: 12px;vertical-align: top;" colspan="2">Chiết khấu</td>
-									<td style="padding: 12px;padding-top: 0px;text-align: right;border-right: 1px solid #D7D7D7;border-bottom: 0;border-left: 0;box-sizing: border-box;font-size: 12px;vertical-align: top;" colspan="2">{{params.DISCOUNT}}</td>
-								</tr>
-								<tr style="background-color: #ECECEC;box-sizing: border-box;">
-									<td style="padding: 12px;border-bottom-left-radius: 8px;font-size: 16px;padding-top: 0px;text-align: left;border-right: 0;box-sizing: border-box;border-bottom: 1px solid #D7D7D7;border-left: 1px solid #D7D7D7;vertical-align: top;" colspan="2"><b style="box-sizing: border-box;">Tổng cộng</b></td>
-									<td style="padding: 12px;border-bottom-right-radius: 8px;font-size: 16px;padding-top: 0px;text-align: right;border-right: 1px solid #D7D7D7;border-left: 0;box-sizing: border-box;border-bottom: 1px solid #D7D7D7;vertical-align: top;" colspan="2"><b style="box-sizing: border-box;">{{params.GRAND_TOTAL}}</b></td>
-								</tr>
-							</table>
-						</div>
-					</div>
-				</div>
-				<div class="footer" style="box-sizing: border-box;">
-					<div class="support" style="box-sizing: border-box;display: flex;background-color: #16884a;color: #fff;padding: 18px 25px 18px 25px;margin-top: 9%;">
-						<div class="support__img" style="box-sizing: border-box;width: 30%;align-self: center;">
-							<img src="https://sobanhang.com/wp-content/uploads/2021/08/cropped-cropped-logo-website.png" alt="" style="box-sizing: border-box;height: 32px;">
-						</div>
-						<div class="support__content" style="box-sizing: border-box;width: 70%;padding-left: 15px;">
-							<h3 style="box-sizing: border-box;font-size: 15px;margin: 0;">Trung tâm hỗ trợ | Liên hệ</h3>
-							<p style="box-sizing: border-box;font-size: 10px;margin-top: 5px;margin-bottom: 0;">Đơn hàng được tạo bởi SoBanHang - Phần mềm quản lý bán hàng, thu chi, sổ nợ miễn phí. Được phát triển bởi Công ty Finan Pte. Ltd.</p>
-						</div>
-					</div>
-					<div class="own" style="box-sizing: border-box;text-align: center;font-size: 10px;margin-top: 4%;margin-bottom: 4%;padding: 0 25px;">Đây là thư tự động được tạo từ danh sách đăng ký của chúng tôi. Do đó, xin đừng trả lời thư này.</div>
-				</div>
-			</div>
-		</body>
-		>>>>>>> Stashed changes
-	</html>
