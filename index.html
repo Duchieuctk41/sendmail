@@ -40,7 +40,11 @@
 					</div>
 					<div class="detailOrder" style="box-sizing: border-box;margin: auto;width: 165px;">
 						<a href="{{params.DOMAIN_BUSINESS}}/o/{{params.ORDER_NUMBER}}" style="box-sizing: border-box;text-decoration: none;color: inherit;cursor: pointer;color:inherit;"><button class="detailorder" style="box-sizing: border-box;display: block;margin: auto;margin-top: 25%;margin-bottom: 9%;width: 100%;padding: 9.5px 24px 9.5px 24px;background-color: #16884A;box-shadow: 0px 8px 16px rgba(0, 171, 85, 0.08);border-radius: 8px;font-size: 14px;color: #fff;font-weight: 500;border: 0;">Chi tiết đơn hàng</button></a>
-						<!-- <div class="code"><img src="https://indochinapost.vn/wp-content/uploads/2018/10/ma-code.gif" alt=""></div> -->
+						<div class="code"><img src="https://qrcode.tec-it.com/API/QRCode?data={{params.DOMAIN_BUSINESS}}/o/{{params.ORDER_NUMBER}}&backcolor=%23ffffff" alt="" style="width: 20px;
+							display: block;
+							margin-left: auto;
+							margin-right: auto;
+						width: 50%;"></div>
 						<span style="box-sizing: border-box;font-size: 10px;display: block;margin: 10% auto 30%;text-align: center;">Mã đơn hàng: {{params.ORDER_NUMBER}}</span>
 					</div>
 					<h3 style="box-sizing: border-box;font-size: 15px;">Thông tin đơn hàng</h3>
