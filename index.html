@@ -9,26 +9,36 @@
 	<body style="box-sizing: border-box;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
 		'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
 		sans-serif;width: 100%;height: 100%;margin: 0;overflow-x: hidden;background-color: #ECECEC;color:#000000">
-		<div class="header_block" style="box-sizing: border-box;width: 100%;height: 200px;background-image: url({{params.BACKGROUND}});background-position: center;background-size: cover;background-repeat: no-repeat;">
+		<div class="header_block" style="box-sizing: border-box;width: 100%;height: 300px;background-image: url({{params.BACKGROUND}});background-position: center;background-size: cover;background-repeat: no-repeat;">
 		</div>
-		<div class="body" style="box-sizing: border-box;position: absolute;left: 50%;transform: translateX(-50%);width: 95%;background: #FFFFFF;box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);-moz-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25); -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);border-radius: 12px 12px 0px 0px;border:1px solid #D7D7D7; top: 60px;">
+		<div class="body" style="    margin:auto;box-sizing: border-box;position: absolute;left: 50%;transform: translateX(-50%);width: 95%;background: #FFFFFF;box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);-moz-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25); -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);border-radius: 12px 12px 0px 0px;border:1px solid #D7D7D7; top: 60px;">
 			<div class="container" style="box-sizing: border-box;">
-				<div class="body__title" style="box-sizing: border-box;display: flex;background-color: #F6F6F6;border-top-left-radius: 8px;border-top-right-radius: 8px;flex-direction: column;">
+				<div class="body__title" style="box-sizing: border-box;background-color: #F6F6F6;border-top-left-radius: 8px;border-top-right-radius: 8px;">
 					<div class="logo" style="width: 100%;
-						display: flex;
-						justify-content: center;
 						padding-top: 19px;
 						border-top-left-radius: 8px;
 						border-top-right-radius: 8px;
 						padding-bottom: 10px;
-						background-color: #fff;">
-						<img src="https://sobanhang.com/wp-content/uploads/2021/08/cropped-cropped-logo-website.png" alt="" style="box-sizing: border-box;height: 32px;display: block;margin: 0;">
+						background-color: #fff; text-align:center">
+						<img src="https://sobanhang.com/wp-content/uploads/2021/08/cropped-cropped-logo-website.png" alt="" style="box-sizing: border-box;height: 32px;display: inline-block;margin: 0;">
 					</div>
 					<div class="infobox" style="box-sizing: border-box;flex: 100%;display: flex;padding: 9px;padding-top:10px">
-						<div class="image" style="box-sizing: border-box;width: 30%;padding-left: 36px;padding-top: 10px;">
-							<img src="{{params.AVATAR_BUSINESS}}" style="box-sizing: border-box;display: block;height: 60px;">
+						<div class="image" style="    width: 30%;
+							padding-left: 36px;
+							padding-top: 25px;
+							display: grid;
+							padding-bottom: 10px;justify-content: center;
+							align-items: center;">
+							<img src="{{params.AVATAR_BUSINESS}}" style="box-sizing: border-box;display: block;height: 130px;">
 						</div>
-						<div class="infobox__content" style="box-sizing: border-box;width: 70%;font-size: 10px;padding-right: 45px;font-weight: 500;">
+						<div class="infobox__content" style="    width: 70%;
+							font-size: 10px;
+							padding-right: 45px;
+							font-weight: 500;
+							text-align: left;
+							display: grid;
+							padding-top: 10px;
+							padding-bottom: 10px;">
 							<p style="box-sizing: border-box;">{{params.NAME_BUSINESS}}</p>
 							<p style="box-sizing: border-box;"><a href="{{params.DOMAIN_BUSINESS}}" style="box-sizing: border-box;text-decoration: none;color: inherit;cursor: pointer;color:inherit;">{{params.DOMAIN_BUSINESS}}</a></p>
 							<p style="box-sizing: border-box;">{{params.PHONE_BUSINESS}} - {{params.ADDRESS_BUSINESS}}</p>
@@ -37,7 +47,7 @@
 					
 				</div>
 				<h1 style="box-sizing: border-box;font-size: 18px;margin: 0px auto 0px;padding-top: 40px;padding-bottom: 50px;text-align: center;">Đơn hàng <span style="color: #16884a;box-sizing: border-box;">#{{params.ORDER_NUMBER}}</span> {{params.STATE}}!</h1>
-				<div class="body__content" style="box-sizing: border-box;padding: 0px 12px 0px 12px;font-size: 12px;">
+				<div class="body__content" style="text-align:left;box-sizing: border-box;padding: 0px 12px 0px 12px;font-size: 12px;">
 					<div class="body__content_header" style="box-sizing: border-box;">
 						<h3 style="box-sizing: border-box;font-size: 15px;padding-bottom:8px">Xin chào {{params.NAME_CUSTOMER}}</h3>
 						<p style="box-sizing: border-box;padding-bottom:8px;">Đơn hàng <span style="color: #16884a;box-sizing: border-box;"><b style="box-sizing: border-box;">({{params.TOTAL_ITEMS}} sản phẩm - trị giá {{params.GRAND_TOTAL}} VND)</b></span> của bạn {{params.STATE}}!</p>
@@ -46,14 +56,14 @@
 						<p style="box-sizing: border-box;padding-bottom:8px;"><a href="{{params.DOMAIN_BUSINESS}}/o/{{params.ORDER_NUMBER}}" style="box-sizing: border-box;text-decoration: none;color: inherit;cursor: pointer;color:inherit;">Click để xem thông tin chi tiết của đơn hàng.</a></p>
 						<p style="box-sizing: border-box;padding-bottom:8px;">Nếu có bất cứ thắc mắc gì về đơn hàng, giao hàng, thanh toán, chất lượng sản phẩm. xin liên hệ với shop {{params.NAME_BUSINESS}} - Địa chỉ {{params.ADDRESS_BUSINESS}} | Hotline {{params.PHONE_BUSINESS}} | Website {{params.DOMAIN_BUSINESS}}</p>
 					</div>
-					<div class="detailOrder" style="box-sizing: border-box;margin: auto;width: 165px;">
-						<a href="{{params.DOMAIN_BUSINESS}}/o/{{params.ORDER_NUMBER}}" style="box-sizing: border-box;text-decoration: none;color: inherit;cursor: pointer;color:inherit;"><button class="detailorder" style="box-sizing: border-box;display: block;margin: auto;margin-top: 25%;margin-bottom: 9%;width: 100%;padding: 9.5px 24px 9.5px 24px;background-color: #16884A;box-shadow: 0px 8px 16px rgba(0, 171, 85, 0.08);border-radius: 8px;font-size: 14px;color: #fff;font-weight: 500;border: 0;">Chi tiết đơn hàng</button></a>
-						<div class="code"><img src="https://qrcode.tec-it.com/API/QRCode?data={{params.DOMAIN_BUSINESS}}/o/{{params.ORDER_NUMBER}}&backcolor=%23ffffff" alt="" style="width: 20px;
+					<div class="detailOrder" style="box-sizing: border-box;margin: auto;width: fit-content;">
+						<a href="{{params.DOMAIN_BUSINESS}}/o/{{params.ORDER_NUMBER}}" style="box-sizing: border-box;text-decoration: none;color: inherit;cursor: pointer;color:inherit;"><button class="detailorder" style="box-sizing: border-box;display: block;margin: auto;margin-top: 15%;margin-bottom: 9%;padding: 9.5px 24px 9.5px 24px;background-color: #16884A;box-shadow: 0px 8px 16px rgba(0, 171, 85, 0.08);border-radius: 8px;font-size: 14px;color: #fff;font-weight: 500;border: 0;">Chi tiết đơn hàng</button></a>
+						<div class="code"><img src="https://qrcode.tec-it.com/API/QRCode?data=https://{{params.DOMAIN_BUSINESS}}/o/{{params.ORDER_NUMBER}}&backcolor=%23ffffff" alt="" style="width: 20px;
 							display: block;
 							margin-left: auto;
 							margin-right: auto;
 						width: 50%;"></div>
-						<span style="box-sizing: border-box;font-size: 10px;display: block;margin: 10% auto 30%;text-align: center;">Mã đơn hàng: {{params.ORDER_NUMBER}}</span>
+						<span style="box-sizing: border-box;font-size: 10px;display: block;margin: 4% auto 20%;text-align: center;">Mã đơn hàng: {{params.ORDER_NUMBER}}</span>
 					</div>
 					<h3 style="box-sizing: border-box;font-size: 15px;">Thông tin đơn hàng</h3>
 					<div class="orderInfo" style="box-sizing: border-box;">
@@ -108,7 +118,7 @@
 				</div>
 			</div>
 			<div class="footer" style="box-sizing: border-box;">
-				<div class="support" style="box-sizing: border-box;display: flex;background-color: #16884a;color: #fff;padding: 18px 25px 18px 25px;margin-top: 9%;flex-direction: column;">
+				<div class="support" style="text-align:left;box-sizing: border-box;background-color: #16884a;color: #fff;padding: 18px 25px 18px 25px;margin-top: 9%;">
 					<div class="support__img" style="box-sizing: border-box;width: 100%;align-self: auto;padding-top:7px;padding-bottom:7px">
 						<svg style="box-sizing: border-box;height: 32px;" viewBox="0 0 520 128" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<path d="M87.9128 0H9.93219C7.301 0.00981701 4.78036 1.06905 2.91982 2.94677C1.05927 4.82449 0.00972722 7.3684 0 10.0239L0 19.4888H6.64607C7.69914 19.5882 8.67753 20.0807 9.38973 20.8699C10.1019 21.659 10.4967 22.688 10.4967 23.7555C10.4967 24.8229 10.1019 25.8519 9.38973 26.641C8.67753 27.4302 7.69914 27.9227 6.64607 28.0221H0V46.3185H6.64607C7.69914 46.4179 8.67753 46.9104 9.38973 47.6996C10.1019 48.4887 10.4967 49.5177 10.4967 50.5852C10.4967 51.6526 10.1019 52.6816 9.38973 53.4707C8.67753 54.2599 7.69914 54.7524 6.64607 54.8518H0V73.1482H6.64607C7.69914 73.2476 8.67753 73.7401 9.38973 74.5293C10.1019 75.3184 10.4967 76.3474 10.4967 77.4148C10.4967 78.4823 10.1019 79.5113 9.38973 80.3004C8.67753 81.0896 7.69914 81.5821 6.64607 81.6815H0V99.9779H6.64607C7.69914 100.077 8.67753 100.57 9.38973 101.359C10.1019 102.148 10.4967 103.177 10.4967 104.245C10.4967 105.312 10.1019 106.341 9.38973 107.13C8.67753 107.919 7.69914 108.412 6.64607 108.511H0V117.976C0.00972722 120.632 1.05927 123.176 2.91982 125.053C4.78036 126.931 7.301 127.99 9.93219 128H87.9128C90.544 127.99 93.0646 126.931 94.9252 125.053C96.7857 123.176 97.8353 120.632 97.845 117.976V9.91208C97.8063 7.27606 96.744 4.76067 94.8866 2.90699C93.0291 1.05332 90.525 0.00947505 87.9128 0ZM64.3931 88.538C61.4036 90.794 57.8741 92.2085 54.1655 92.637V98.8972C54.1558 100.077 53.6847 101.205 52.8548 102.035C52.0249 102.866 50.9035 103.332 49.7348 103.332H47.704C46.5387 103.332 45.4212 102.864 44.5972 102.033C43.7732 101.201 43.3103 100.073 43.3103 98.8972V92.4507C41.4829 92.1428 39.6982 91.6174 37.9934 90.8856C35.0164 89.6722 32.4515 87.6142 30.6089 84.9607C28.8403 82.2968 27.9252 79.1489 27.9874 75.9429V74.1543C27.9816 74.027 28.0052 73.9001 28.0565 73.7837C28.1078 73.6673 28.1852 73.5645 28.2827 73.4836C28.3677 73.391 28.4705 73.3169 28.5847 73.2657C28.699 73.2144 28.8223 73.1871 28.9473 73.1854H38.1411C38.4048 73.1873 38.6571 73.2944 38.8426 73.4836C38.9294 73.5712 38.9972 73.6761 39.0416 73.7915C39.0861 73.907 39.1064 74.0305 39.1011 74.1543V75.384C39.1152 76.4799 39.3952 77.5556 39.9165 78.517C40.4379 79.4785 41.1848 80.2963 42.0918 80.899C44.4776 82.5051 47.3141 83.2894 50.1779 83.1348C52.4421 83.3032 54.6922 82.6563 56.5286 81.3089C57.1935 80.7579 57.7277 80.0635 58.0919 79.2768C58.4561 78.4901 58.6411 77.631 58.6332 76.7627C58.6538 76.1557 58.5497 75.5509 58.3273 74.9866C58.1049 74.4222 57.769 73.9104 57.3409 73.4836C56.3228 72.4828 55.1346 71.675 53.8332 71.0987C52.3563 70.428 50.1409 69.4964 46.781 68.3039C43.641 67.2937 40.5802 66.0481 37.6242 64.5776C35.1486 63.32 32.999 61.4951 31.3473 59.2489C29.5941 56.8339 28.6968 53.8939 28.7997 50.9019C28.7281 47.8675 29.5926 44.8855 31.2735 42.3686C33.0157 39.8703 35.422 37.9197 38.2149 36.7418C39.8718 36.0273 41.6071 35.5145 43.3841 35.214V29.1028C43.3841 27.9267 43.847 26.7988 44.671 25.9672C45.495 25.1356 46.6126 24.6684 47.7779 24.6684H49.8086C50.9774 24.6684 52.0988 25.1344 52.9286 25.9649C53.7585 26.7955 54.2296 27.9233 54.2394 29.1028V35.214C56.0208 35.5697 57.7554 36.1324 59.4085 36.8908C62.3863 38.2112 64.9427 40.3397 66.7931 43.0393C68.6295 45.7182 69.5853 48.9119 69.5253 52.1689V53.3985C69.5336 53.5282 69.5148 53.6582 69.4703 53.7801C69.4258 53.9021 69.3565 54.0133 69.2669 54.1066C69.1732 54.1952 69.0628 54.2639 68.9423 54.3087C68.8218 54.3535 68.6936 54.3735 68.5653 54.3674H59.2978C59.1695 54.3735 59.0413 54.3535 58.9208 54.3087C58.8003 54.2639 58.6899 54.1952 58.5962 54.1066C58.5066 54.0133 58.4373 53.9021 58.3928 53.7801C58.3483 53.6582 58.3295 53.5282 58.3378 53.3985V52.7651C58.3152 51.6334 58.0374 50.5217 57.5256 49.5145C57.0138 48.5072 56.2814 47.6309 55.384 46.952C53.2583 45.3559 50.6445 44.5646 47.9994 44.7162C45.8941 44.5968 43.8075 45.1723 42.0549 46.3558C41.365 46.8696 40.8095 47.5453 40.4364 48.3244C40.0632 49.1035 39.8837 49.9626 39.9134 50.8274C39.8948 52.0879 40.3423 53.3102 41.1687 54.2556C42.2231 55.3176 43.4789 56.1541 44.861 56.715C46.4856 57.4603 49.0333 58.4664 52.4671 59.6961C55.5374 60.7656 58.5452 62.0097 61.4762 63.4224C63.761 64.5837 65.7652 66.2375 67.3469 68.2667C69.1877 70.6399 70.1185 73.6036 69.9684 76.6137C70.0334 78.9037 69.5625 81.1769 68.5937 83.2487C67.625 85.3206 66.1859 87.1327 64.3931 88.538ZM93.0081 114.921C93.0063 117.126 92.2807 119.27 90.9448 121.016C89.6089 122.762 87.7378 124.012 85.6236 124.572C87.2126 122.748 88.0917 120.405 88.0974 117.976V9.91208C88.0856 7.53177 87.2349 5.23338 85.6974 3.42824C87.8117 3.98795 89.6828 5.23839 91.0187 6.98435C92.3546 8.73032 93.0801 10.8735 93.082 13.0795L93.0081 114.921Z" fill="white"/>
