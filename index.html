@@ -11,9 +11,9 @@
 		sans-serif;width: 100%;height: 100%;margin: 0;overflow-x: hidden;background-color: #ECECEC;">
 		<div class="header_block" style="box-sizing: border-box;width: 100%;height: 200px;background-image: url({{params.BACKGROUND}});background-position: center;background-size: cover;background-repeat: no-repeat;">
 		</div>
-		<div class="body" style="box-sizing: border-box;position: absolute;left: 50%;transform: translateX(-50%);width: 580px;background: #FFFFFF;box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);-moz-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25); -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);border-radius: 12px 12px 0px 0px;border:1px solid #D7D7D7; width:100%">
+		<div class="body" style="box-sizing: border-box;position: absolute;left: 50%;transform: translateX(-50%);width: 95%;background: #FFFFFF;box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);-moz-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25); -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.25);border-radius: 12px 12px 0px 0px;border:1px solid #D7D7D7; top: 60px;">
 			<div class="container" style="box-sizing: border-box;">
-				<div class="body__title" style="box-sizing: border-box;display: flex;background-color: #F6F6F6;border-top-left-radius: 8px;border-top-right-radius: 8px;">
+				<div class="body__title" style="box-sizing: border-box;display: flex;background-color: #F6F6F6;border-top-left-radius: 8px;border-top-right-radius: 8px;flex-direction: column-reverse;">
 					<div class="infobox" style="box-sizing: border-box;flex: 70%;display: flex;padding: 9px;padding-top:10px">
 						<div class="image" style="box-sizing: border-box;width: 30%;padding-left: 36px;padding-top: 10px;">
 							<img src="{{params.AVATAR_BUSINESS}}" style="box-sizing: border-box;display: block;height: 60px;">
@@ -24,12 +24,19 @@
 							<p style="box-sizing: border-box;">{{params.PHONE_BUSINESS}} - {{params.ADDRESS_BUSINESS}}</p>
 						</div>
 					</div>
-					<div class="logo" style="box-sizing: border-box;width: 30%;padding-left: 19px;padding-right: 7px;">
-						<img src="https://sobanhang.com/wp-content/uploads/2021/08/cropped-cropped-logo-website.png" alt="" style="box-sizing: border-box;height: 32px;display: block;margin-top: 24px;">
+					<div class="logo" style="width: 100%;
+						display: flex;
+						justify-content: center;
+						padding-top: 19px;
+						border-top-left-radius: 8px;
+						border-top-right-radius: 8px;
+						padding-bottom: 10px;
+						background-color: #fff;">
+						<img src="https://sobanhang.com/wp-content/uploads/2021/08/cropped-cropped-logo-website.png" alt="" style="box-sizing: border-box;height: 32px;display: block;margin: 0;">
 					</div>
 				</div>
 				<h1 style="box-sizing: border-box;font-size: 18px;margin: 0px auto 0px;padding-top: 40px;padding-bottom: 50px;text-align: center;">Đơn hàng <span style="color: #16884a;box-sizing: border-box;">#{{params.ORDER_NUMBER}}</span> {{params.STATE}}!</h1>
-				<div class="body__content" style="box-sizing: border-box;padding: 0px 26px 0px 26px;font-size: 12px;">
+				<div class="body__content" style="box-sizing: border-box;padding: 0px 12px 0px 12px;font-size: 12px;">
 					<div class="body__content_header" style="box-sizing: border-box;">
 						<h3 style="box-sizing: border-box;font-size: 15px;padding-bottom:8px">Xin chào {{params.NAME_CUSTOMER}}</h3>
 						<p style="box-sizing: border-box;padding-bottom:8px;">Đơn hàng <span style="color: #16884a;box-sizing: border-box;"><b style="box-sizing: border-box;">({{params.TOTAL_ITEMS}} sản phẩm - trị giá {{params.GRAND_TOTAL}} VND)</b></span> của bạn {{params.STATE}}!</p>
@@ -100,16 +107,16 @@
 				</div>
 			</div>
 			<div class="footer" style="box-sizing: border-box;">
-				<div class="support" style="box-sizing: border-box;display: flex;background-color: #16884a;color: #fff;padding: 18px 25px 18px 25px;margin-top: 9%;">
-					<div class="support__img" style="box-sizing: border-box;width: 30%;align-self: center;padding-top:7px">
+				<div class="support" style="box-sizing: border-box;display: flex;background-color: #16884a;color: #fff;padding: 18px 25px 18px 25px;margin-top: 9%;flex-direction: column;">
+					<div class="support__img" style="box-sizing: border-box;width: 30%;align-self: auto;padding-top:7px">
 						<img src="https://sobanhang.com/wp-content/uploads/2021/08/cropped-cropped-logo-website.png" alt="" style="box-sizing: border-box;height: 32px;">
 					</div>
-					<div class="support__content" style="box-sizing: border-box;width: 70%;padding-left: 15px;">
+					<div class="support__content" style="box-sizing: border-box;width: 70%;padding-left: 0px;">
 						<h3 style="box-sizing: border-box;font-size: 15px;margin: 0;">Trung tâm hỗ trợ | Liên hệ</h3>
 						<p style="box-sizing: border-box;font-size: 10px;margin-top: 5px;margin-bottom: 0;">Đơn hàng được tạo bởi SoBanHang - Phần mềm quản lý bán hàng, thu chi, sổ nợ miễn phí. Được phát triển bởi Công ty Finan Pte. Ltd.</p>
 					</div>
 				</div>
-				<div class="own" style="box-sizing: border-box;text-align: center;font-size: 10px;margin-top: 4%;margin-bottom: 4%;padding: 0 25px;">Đây là thư tự động được tạo từ danh sách đăng ký của chúng tôi. Do đó, xin đừng trả lời thư này.</div>
+				<div class="own" style="box-sizing: border-box;text-align: center;font-size: 10px;margin-top: 4%;margin-bottom: 4%;padding: 0 25px 37px;">Đây là thư tự động được tạo từ danh sách đăng ký của chúng tôi. Do đó, xin đừng trả lời thư này.</div>
 			</div>
 		</div>
 	</body>
